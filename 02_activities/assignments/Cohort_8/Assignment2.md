@@ -54,7 +54,7 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Your answer...Type 1 overwrites changes and Type 2 retains changes. In my logical model, the Type 1 Customer_addresses table is the one that does not have the start date, end date, or current address flag. The Type 2 table is the one with the start date, end date, or current address flag. These extra columns allow for tracking of past addresses which will not have the current address flag and will have the end date, thus allowing for retention of changes.
 ```
 
 ***
